@@ -1,0 +1,47 @@
+body { 
+  font-family: 'Inter', sans-serif; 
+  background-color: #F5FDF8;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.glass-effect { 
+  background: rgba(255, 255, 255, 0.8); 
+  backdrop-filter: blur(8px); 
+}
+
+.no-scrollbar::-webkit-scrollbar { 
+  display: none; 
+}
+
+.no-scrollbar { 
+  -ms-overflow-style: none; 
+  scrollbar-width: none; 
+}
+
+@keyframes pulse-soft {
+  0%, 100% { 
+    transform: scale(1); 
+    opacity: 1; 
+  }
+  50% { 
+    transform: scale(1.05); 
+    opacity: 0.8; 
+  }
+}
+
+.animate-pulse-soft {
+  animation: pulse-soft 2s infinite ease-in-out;
+}
+
+@keyframes logo-zoom {
+  0%, 100% { 
+    transform: scale(1); 
+  }
+  50% { 
+    transform: scale(1.2); 
+  }
+}
+
+.animate-zoom {
+  animation: logo-zoom 4s ease-in-out infinite;
+}
